@@ -1,4 +1,4 @@
-/* Blink Example
+/* Blink Example push into github repository
 
    This example code is in the Public Domain (or CC0 licensed, at your option.)
 
@@ -28,7 +28,8 @@ void app_main(void)
     gpio_reset_pin(BLINK_GPIO);
     /* Set the GPIO as a push/pull output */
     gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
-    while(1) {
+    while(1)
+    {
         /* Blink off (output low) */
         printf("Turning off the LED\n");
         gpio_set_level(BLINK_GPIO, 0);
